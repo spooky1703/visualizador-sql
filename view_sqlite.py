@@ -12,7 +12,7 @@ from urllib.parse import urlparse, parse_qs, unquote
 DB_PATH = sys.argv[1] if len(sys.argv) > 1 else "riego.db"
 HOST = "127.0.0.1"
 PORT = 8000
-ROW_LIMIT = 200  # límite de filas a mostrar por tabla
+ROW_LIMIT = 2000  # límite de filas a mostrar por tabla
 
 def get_tables(conn):
     cur = conn.cursor()
